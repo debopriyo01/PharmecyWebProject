@@ -1,0 +1,397 @@
+body {
+
+    background-color: white;
+
+
+}
+
+/*Main Outer layer */
+.Main_Layer {
+
+    width: auto;
+    height: auto;
+    max-height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    padding-bottom: 20px;
+
+}
+
+/*2nd layer*/
+.Sub_layer1 {
+
+    text-align: left;
+    padding: 7px;
+    box-shadow: 0 3px 10px 3px rgb(0 0 0 / 0.4);
+    width: 950px;
+    margin-left: 10%;
+    top: 4%;
+    margin-bottom: 4%;
+    height: auto;
+    padding-bottom: 8px;
+
+}
+
+.Sub_layer1>img {
+
+    float: right;
+    height: 772px;
+    padding: 2px;
+    width: 460px;
+    max-height: 772px;
+
+}
+
+
+/*3rd Layer*/
+.Sub_layer2 {
+
+    margin-left: 4%;
+
+}
+
+
+
+
+.Sub_layer2 .CheakBox>input {
+    font-size: xx-large;
+}
+
+/*Only the Child of This div having the width of 140px*/
+.Connact_Details>input {
+
+    width: 140px;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 23px;
+    padding: 12px;
+}
+
+/*Only the Child of This div having the width of 140px*/
+.Address>input {
+
+    width: 140px;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 23px;
+    padding: 12px;
+}
+
+input::placeholder {
+
+    font-size: 13px;
+}
+
+
+
+input:focus {
+    background-color: cornsilk;
+}
+
+
+
+p::after {
+    content: "*";
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+option {
+
+    line-height: 21px;
+    font-size: medium;
+}
+
+#Dist {
+    line-height: 21px;
+    font-size: medium;
+}
+
+button {
+
+    margin-left: 4%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+/*Responsive Sections*/
+
+/*<-----------------------------Mobile Divises----------------------------------->*/
+
+/*Iphone 12 pro*/
+
+@media (max-Width:391px) {
+
+    .Main_Layer {
+
+
+        margin-left: 0%;
+
+    }
+
+    .Sub_layer1>img {
+
+
+
+        padding-right: 5px;
+        margin-top: 3px;
+        width: 150px;
+        max-height: 200px;
+    }
+
+    .Sub_layer1 {
+        box-shadow: none;
+        width: 400px;
+        padding-left: 0px;
+        height: auto;
+    }
+
+    .Sub_layer1>img {
+
+
+
+        margin-right: 1%;
+        width: 200px;
+        max-height: 300px;
+        padding-right: 10px;
+    }
+
+    .Sub_layer2 {
+
+        margin-left: 1%;
+
+    }
+
+    input::placeholder {
+
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .Connact_Details>input {
+
+        width: 120px;
+        height: 21px;
+        padding: 12px;
+    }
+
+    .Address>input {
+
+        width: 120px;
+        height: 21px;
+        padding: 12px;
+    }
+
+    option {
+
+        line-height: 12px;
+        font-size: small;
+    }
+
+    #Dist {
+        line-height: 12px;
+        font-size: small;
+    }
+
+    button {
+
+        margin-left: 1%;
+
+
+    }
+
+
+
+
+}
+
+
+
+/*Iphone XR*/
+
+@media (max-Width:420px) and (max-height:896px) {
+
+    .Main_Layer {
+
+        margin-left: 1%;
+
+
+    }
+
+    .Sub_layer1 {
+
+
+        margin-left: 0%;
+        box-shadow: none;
+        width: 400px;
+        padding-bottom: 5%;
+    }
+
+    .Sub_layer1>img {
+
+
+
+        margin-right: 1%;
+        width: 200px;
+        max-height: 300px;
+        padding-right: 10px;
+    }
+
+    .Sub_layer2 {
+
+        margin-left: 1%;
+
+    }
+
+    input::placeholder {
+
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .Connact_Details>input {
+
+        width: 120px;
+        height: 21px;
+        padding: 12px;
+    }
+
+    .Address>input {
+
+        width: 120px;
+        height: 21px;
+        padding: 12px;
+    }
+
+    option {
+
+        line-height: 12px;
+        font-size: small;
+    }
+
+    #Dist {
+        line-height: 12px;
+        font-size: small;
+    }
+
+    button {
+
+        margin-left: 1%;
+
+
+    }
+
+
+
+}
+
+/*<-----------------------------Ipads and Tablets ----------------------------->*/
+
+/*Ipad Mini*/
+@media (max-width:768px)And(Max-height:1024px) {
+
+    .Sub_layer1 {
+        margin-left: 7%;
+        width: auto;
+
+
+    }
+
+    .Main_Layer {
+
+        margin-left: 3%;
+        margin-top: 9%;
+    }
+
+    .Sub_layer1>img {
+
+
+        width: 240px;
+        height: 280px;
+
+    }
+
+}
+
+
+/*Ipad Air*/
+@media (max-width:820px) {
+
+    .Sub_layer1 {
+        margin-left: 7%;
+        width: auto;
+
+
+    }
+
+    .Main_Layer {
+
+        margin-left: 3%;
+        margin-top: 9%;
+    }
+
+    .Sub_layer1>img {
+
+
+        width: 240px;
+        height: 280px;
+
+    }
+}
+
+/*<-----------------------------------Next Hub WideScreen Divises----------------------------->
+
+/*nextHub*/
+@media (max-width:1024px) {
+
+    .Sub_layer1 {
+        margin-left: 7%;
+        width: auto;
+
+
+    }
+
+    .Main_Layer {
+
+        margin-left: 3%;
+        margin-top: 9%;
+    }
+
+    .Sub_layer1>img {
+
+
+        width: 300px;
+        height: 50%;
+
+    }
+}
+
+
+
+/*NextHub Pro*/
+
+@media (max-width:1280px) {
+
+    .Sub_layer1 {
+        margin-left: 7%;
+        width: auto;
+
+
+    }
+
+    .Main_Layer {
+
+        margin-left: 3%;
+        margin-top: 9%;
+    }
+
+
+}

@@ -1,0 +1,504 @@
+body {
+
+    background-color: white;
+    place-items:center ;
+
+
+}
+
+header {
+    padding-top: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-size: xx-large;
+    /*No need To Provide Margine as Padding has been given to the Right only */
+    height: 50px;
+    color: white;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+footer {
+
+    text-align: center;
+    padding-top: 11px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-top: 10px;
+    font-size: larger;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+nav {
+
+    top: 0%;
+    position: sticky;
+    z-index: 1;
+    background-color: transparent;
+
+}
+
+ul {
+    margin-top: 2px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgb(104, 104, 104);
+    border-radius: 5px;
+    border: 2px solid black;
+    border-top: none;
+
+}
+
+ul li {
+
+    display: inline-block;
+    text-align: left;
+    left: 3%;
+    position: relative;
+    line-height: 21px;
+
+}
+
+ul li a {
+
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+
+}
+
+ul li:hover {
+    background-color: rgb(32, 32, 32);
+    width: auto;
+    height: auto;
+
+}
+
+
+.DropDown {
+
+    min-width: auto;
+    position: absolute;
+    max-width: 100%;
+    display: none;
+    border-top: none;
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+}
+
+.DropDown li a {
+
+    color: black;
+    text-align: left;
+    left: 0px;
+    font-size: medium;
+
+}
+
+.DropDown li:hover {
+
+    top: 1px;
+    left: 0px;
+    padding-bottom: 1px;
+    background-color: whitesmoke;
+}
+
+
+ul li:hover .DropDown {
+
+    display: block;
+    z-index: 1;
+    background-color: lightgreen;
+}
+
+ul li:hover .DropDown li {
+    display: block;
+    z-index: 1;
+
+}
+
+ul li a:hover {
+
+    margin-left: 3px;
+
+}
+
+/*Animetion Css */
+
+/*The First And Outer Layer(Set=hight,display,place-items,position,margine:-*/
+.Container {
+
+
+    height: auto;
+    margin: auto;
+    position: reletive;
+    place-items: center;
+    display: grid;
+    /*Hidding The overflow in the X-direction only */
+    overflow-x: hidden;
+}
+
+/*2nd Layer of The images */
+.Slide_Container {
+
+
+    display: flex;
+    width: calc(250px *18);
+    max-width: auto;
+    animation: scroll 20s linear infinite;
+
+
+}
+
+@keyframes scroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateX(calc(-250px *9));
+    }
+}
+
+/*The 3rd layer of The box */
+.Slide_Images {
+    
+    /*Take the Width Autometically according to the Image resolution */
+    width: auto;
+    max-width: 100%;
+    height: 250px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+
+
+}
+
+img {
+
+    
+    width: 800px;
+    height: 100%;
+    transition: 1s;
+    border-radius: 5px;
+    border: 2px solid steelblue;
+
+}
+
+/*Box for The product Details ,offer and image,price*/
+
+/*Main layer*/
+.Main_Layer_box {
+    top: 4%;
+    width: auto;
+    max-width: 100%;
+    margin-top: 1%;
+    margin-left: 14.5%;
+    margin-right: 14%;
+    height: 45%;
+    max-height: 45%;
+    box-shadow: 0 3px 10px 3px rgb(0 0 0 / 0.4);
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 8px;
+    padding-bottom: 18px;
+    padding-right: 8px;
+
+}
+
+/*2nd layer*/
+.Covid_care_2nd_layer {
+
+    height: auto;
+    top: 2%;
+    margin: 5px;
+    min-width: auto;
+    max-width: 100%;
+    text-align: left;
+    padding-top: 2px;
+}
+
+/*3rd layer*/
+.Diagonasis_Care {
+
+    height: auto;
+    top: 2%;
+    margin: 2px;
+    min-width: auto;
+    max-width: 100%;
+    text-align: left;
+    padding-top: 2px;
+}
+
+.Image_Layer_box {
+
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 3px;
+    padding: 7px 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 3px rgb(0 0 0 / 0.4);
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+
+
+.Image_Layer_box:hover {
+
+
+    font-size: 16.5px;
+    transition: .1s;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+
+#Product_image {
+
+    width: 165px;
+    height: 140px;
+    max-height: 140px;
+    border: none;
+}
+
+.Image_Layer_box p,
+h3 {
+
+    text-align: left;
+
+}
+
+
+.Image_Layer_box>p {
+    color: blue;
+}
+
+button {
+
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    background-color: lavender;
+
+}
+
+button:active {
+
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+
+button a {
+
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+}
+
+/*Resposive Sections*/
+
+/*<-----------------------------------Media Quaries For Phones--------------------------------------------->*/
+
+/*Iphone 12 pro*/
+@media (max-width:400px) And (max-height:844px) {
+
+
+    .Main_Layer_box {
+
+        margin-left: 28px;
+        margin-right: 30px;
+    }
+
+
+    ul li:hover .DropDown {
+
+
+        background-color: #808080;
+        margin-top: 12%;
+
+    }
+}
+
+/*Iphone XR*/
+@media (min-width:400px) and (max-width:430px) {
+    ul>li {
+
+        display: flex;
+    }
+
+    ul li:hover {
+        background-color: rgb(32, 32, 32);
+        width: 158px;
+        border-radius: 5px;
+    }
+
+    ul li:hover .DropDown {
+
+
+        background-color: lightgreen;
+        margin-top: 25%;
+        max-width: auto;
+
+    }
+
+    .DropDown li:hover {
+
+        width: 149px;
+        height: 44px;
+    }
+
+    .DropDown {
+        width: 150px;
+    }
+
+    .Main_Layer_box {
+
+        margin-right: 20px;
+        margin-left: 14px;
+
+    }
+
+}
+
+/*<-----------------------------------Media Quaries For Tablets and Ipads------------------------------------------->*/
+/*Taken The Actual Width and The Hight of verious Models(Iphones,Tabs,Ipads,NextHub)*/
+
+/*Ipad mini*/
+@media (max-width:768px) And (max-height:1024px) {
+
+    .Main_Layer_box {
+        padding-left: 14px;
+        padding-bottom: 14px;
+        padding-right: 14px;
+
+    }
+}
+
+/*Ipad Air*/
+@media (max-width:820px) and (max-height:1180px) {
+
+    .Main_Layer_box {
+
+        padding-bottom: 14px;
+    }
+}
+
+
+
+
+/* <----------------------------------------Media Quari for NextHub and NextHub max------------------------------------------->
+
+/*Nexthub WideScreen*/
+@media(max-width:1024px) and (max-height:600px) {
+
+    .Main_Layer_box {
+
+        margin-right: 14px;
+        margin-left: 14px;
+
+
+    }
+
+    .Covid_csare_2nd_layer h1 {
+
+        padding-left: 11%;
+
+    }
+
+    .Diagonasis_Care_2nd_Layer h1 {
+        padding-left: 11%;
+    }
+
+
+}
+
+/*NextHub max WideScreen*/
+@media(max-width:1280px) And (max-height:800px) {
+
+
+    .Main_Layer_box {
+
+        margin-right: 20%;
+        margin-left: 20%;
+
+    }
+
+    .Covid_csare_2nd_layer h1 {
+
+        padding-left: 15%;
+
+    }
+
+    .Diagonasis_Care_2nd_Layer h1 {
+        padding-left: 12%;
+    }
+
+}
+
+/*Filling  some of the gap between 1024px to 1280px */
+@media (min-width:1025px) And (max-width:1180px) {
+
+    .Main_Layer_box {
+
+        margin-right: 14%;
+        margin-left: 18%;
+
+
+    }
+
+    .Image_Layer_box {
+
+
+        padding: 10px 7%;
+    }
+
+
+    .Covid_csare_2nd_layer h1 {
+
+        padding-left: 5%;
+
+    }
+
+    .Diagonasis_Care_2nd_Layer h1 {
+        padding-left: 12%;
+    }
+
+}
+
+/*from 0px to 500px some pxiles will cover (Before Catch  To Iphone 12  Screen resolution  )*/
+@media (max-width:500px) {
+
+
+    .Main_Layer_box {
+
+        margin-right: 11%;
+        margin-left: 14%;
+
+    }
+
+    .Covid_csare_2nd_layer h1 {
+
+        padding-left: 13%;
+
+    }
+
+    .Diagonasis_Care_2nd_Layer h1 {
+        padding-left: 13%;
+    }
+}
+
+/*<----------------------------------------------------------------->*/

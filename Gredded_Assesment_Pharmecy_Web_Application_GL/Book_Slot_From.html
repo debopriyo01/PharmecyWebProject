@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_Slot_Form</title>
+    <link rel="stylesheet" href="ProjectCss_Files\Book_Slot_From.css">
+
+</head>
+
+<body>
+
+    <Section class="Main_Layer">
+
+        <div class="Sub_layer1">
+            <img src="C:\Users\user\Downloads\Images fot HTML Assignment (2)\Images\Lab-Test\lab-test.jpg"
+                alt="No image ">
+            <form action="Book_Slot_form_Succsessfull.html">
+                <article class="Sub_layer2">
+
+                    <p><b>1.Your Connact Details</b></p>
+
+                    <div class="Connact_Details">
+                    <input type="text" placeholder="Full Name" name="Full Name" id="" required>
+                    <input type="number" placeholder="Patient Id if Exist" name="Patient id if Exist" id=""  required><br><br>
+                    <input type="number" placeholder="Contact Number" name="Contact Number" id=""  max="10000000000" min="1"
+                        required>
+                    <input type="email" placeholder="Email id" name="Email id" id=""  required>
+                </div>
+                </article>
+
+                <article class="Sub_layer2">
+
+                    <p><b>2.Address</b></p>
+
+                    <div class="Address">
+                    <input type="number" placeholder="House Number" name="House Number" id="#Details"  required>
+                    <input type="number" placeholder="Street" name="Street" id="#Details" ><br><br>
+                    <input type="text" placeholder="Area" name="Area" id="#Details" ><br><br>
+                </div>
+                    <label for="Dist">District</label><br><br>
+                    <select name="District" id="Dist" required>
+                        <option value="">choose</option>
+                        <option value="">Burdwan</option>
+                        <option value="">Howra</option>
+                        <option value="">Hoglee</option>
+                        <option value="">Paschim Midnapur</option>
+                        <option value="">Bankura</option>
+                        <option value="">Nadia</option>
+                        <option value="">North 24 paragana</option>
+                    </select>
+                </article>
+                <article class="Sub_layer2">
+                  <div class="CheakBox">
+                    <p><b>3.Cheak atleast one box without fail</b></p>
+                    <input type="checkbox" name="option1" id="option1" >
+                    <label for="option1">CBC</label><br>
+                    <input type="checkbox" name="option2" id="option2">
+                    <label for="option2">Complete Urine</label><br>
+                    <input type="checkbox" name="option3" id="option3">
+                    <label for="option3">Lipid Profile</label><br>
+                    <input type="checkbox" name="option4" id="option4">
+                    <label for="option4">Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox" name="option5" id="option5">
+                    <label for="option5">Glucose Test</label><br>
+                </div>
+                </article>
+                <article class="Sub_layer2">
+
+                    <p><b>4.Do you want a hard copy of the reposrt also ?</b></p>
+                    <input type="radio" name="option" id="option1" required>
+                    <label for="option1">Yes</label><br>
+                    <input type="radio" name="option" id="option1" required>
+                    <label for="option1">No</label>
+                </article>
+
+                <article class="Sub_layer2">
+
+                    <p><b>5.Select Your Comfortable Data and Time:- </b></p>
+                    <input type="datetime-local" required>
+
+                </article>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+          </div>
+     </Section>
+  </body>
+
+</html>
